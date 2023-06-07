@@ -1,0 +1,33 @@
+/* yorum satiri bu sekile eklenir */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap");
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 20px;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+} /* bunu yapmazsak kaymalar olur */
+
+a {
+  text-decoration: none; /* linklerin altindaki cizgileri kaldirdik */
+}
+
+input,
+textarea {
+  border: 3px solid yellowgreen;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+}
+
+button {
+  border: 3px solid yellowgreen;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  font-size: 30px;
+  color: yellow;
+  padding: 10px 30px; /* ilk parametre ust ve alttan uzakligi, ikinci parametre sag ve sol uzakligi */
+}
