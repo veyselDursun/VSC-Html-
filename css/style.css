@@ -31,3 +31,46 @@ button {
   color: yellow;
   padding: 10px 30px; /* ilk parametre ust ve alttan uzakligi, ikinci parametre sag ve sol uzakligi */
 }
+
+.header {
+  /* . class i temsil eder */
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+  border: 3px solid yellowgreen;
+  background-color: yellow;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+.header.title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* gap Flex elemanlarinin arasini acmak icin kullanilir*/
+
+.menu a {
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .about {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding: 40px;
+  gap: 30px;
+}
+
+.about img {
+  width: 500px;
+  height: 500px;
+  border: 5px solid yellowgreen;
+  border-radius: 250;
+}
