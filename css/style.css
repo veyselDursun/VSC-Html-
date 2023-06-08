@@ -29,7 +29,7 @@ button {
   background-color: yellowgreen;
   font-size: 30px;
   color: yellow;
-  padding: 10px 30px; /* ilk parametre ust ve alttan uzakligi, ikinci parametre sag ve sol uzakligi */
+  padding: 10px 30px; /* ilk parametre ust ve alttan uzakligi, ikinci parametre sag ve sol uzakligi belirler */
 }
 
 .header {
@@ -37,14 +37,14 @@ button {
   display: flex;
   justify-self: space-between;
   align-items: center;
-  border: 3px solid yellowgreen;
+  border: 3px solid rgb(97, 144, 3);
   background-color: yellow;
   border-radius: 50px;
   padding: 10px 30px;
 }
 
 .header.title {
-  display: flex;
+  display: flex; /* Flex elemanlarinin arasina bosluk koymak icin kullanilir*/
   align-items: center;
   gap: 20px;
 }
@@ -71,6 +71,59 @@ button {
 .about img {
   width: 500px;
   height: 500px;
-  border: 5px solid yellowgreen;
-  border-radius: 250;
+  border: 5px solid rgb(97, 144, 3);
+  border-radius: 250px;
+  box-shadow: 10px 10px 15pxrgb (97, 144, 3);
+}
+
+.about .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 5px dotted gray;
+  margin: 20px;
+}
+
+.section {
+  width: 60%;
+}
+.section .card {
+  display: flex;
+  border: 5px solid rgb(97, 144, 3);
+  border-radius: 50px;
+  background-color: yellow;
+  margin: 40px;
+  padding: 40px;
+  box-shadow: 10px 10px 15px rgb(97, 144, 3);
+}
+
+.section .card .left {
+  flex: 2;
+}
+.section .card .right {
+  flex: 1;
+}
+
+h1 {
+  text-shadow: 10px 10px 15px rgb(97, 144, 3);
+  font-size: 50px;
+}
+.content h1 {
+  /* olusturdugumuz span elemanin yazinin yaninda gorunmesi icin flex yaptik */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.content h1 span {
+  /* basliklarin yaninda span elemanin nokta olarak gorunmesi icin sekillendirme yaptik */
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: yellow;
 }
